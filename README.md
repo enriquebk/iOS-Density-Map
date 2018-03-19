@@ -21,6 +21,12 @@ it, simply add the following line to your Podfile:
 pod 'iOS-Density-Map'
 ```
 
+Then import the `GLDensityMap.h` header file:
+
+```Objective-c
+#import <GLDensityMap.h>
+```
+
 ## Usage
 
 ```Objective-c
