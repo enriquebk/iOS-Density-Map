@@ -40,7 +40,7 @@
     //Set the number of particles styles (style groups).
     self.densityMapView.styleGroupsCount = 1;
     
-    //Return the style for each group.
+    //Retruns the style for each group.
     self.densityMapView.styleForStyleGroup = ^GLParticlesStyle(GLStyleGroupIndex groupIndex) {
         GLParticlesStyle style = {
             .radius = 7,
@@ -55,12 +55,12 @@
     
     __weak ViewController *wself = self;
     
-    //Return the number of particles for each group.
+    //Retruns the number of particles for each group.
     self.densityMapView.particlesCountForStyleGroup = ^uint(GLStyleGroupIndex groupIndex) {
         return (int)wself.locations.count;
     };
     
-    //Retrun the x,y position for each particle
+    //Retruns the x,y position for each particle
     self.densityMapView.positionForParticle = ^CGPoint(GLParticleIndex pointIndex, GLStyleGroupIndex groupIndex) {
         return  [wself.mapView convertCoordinate:wself.locations[pointIndex].coordinate
                                    toPointToView:wself.view];

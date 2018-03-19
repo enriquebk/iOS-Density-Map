@@ -4,9 +4,9 @@ By using OpenGL ES, iOS Density Map allows you to efficiently render thousands o
 
 iOS Density Map has two main components:
 
-GLParticlesRender: Renders all the particles in a eaglcontex. Basically it renders groups of particles with a specific style (GLPariclesStyle).
+`GLParticlesRender`: Renders all the particles in a `eaglcontext`. Basically it renders groups of particles with a specific style (`GLPariclesStyle`).
 
-GLDensityMapView: Provides the eaglcontext and the particles groups info for the GLParticlesRender . The GLDensityMapView provides  a number of properties and blocks that needs to be overwritten in order to display the particles.
+`GLDensityMapView`: Provides the eaglcontext and the particles groups info for the `GLParticlesRender`. The `GLDensityMapView` provides  a number of properties and blocks that needs to be overwritten in order to display the particles.
 
 ## Setup
 
@@ -16,7 +16,7 @@ GLDensityMapView: Provides the eaglcontext and the particles groups info for the
     //Set the number of particles styles (style groups).
     self.densityMapView.styleGroupsCount = 1;
     
-    //Return the style for each group.
+    //Returns the `GLParticlesStyle` for each group.
     self.densityMapView.styleForStyleGroup = ^GLParticlesStyle(GLStyleGroupIndex groupIndex) {
         GLParticlesStyle style = {
             .radius = 7,
@@ -31,12 +31,12 @@ GLDensityMapView: Provides the eaglcontext and the particles groups info for the
     
     __weak ViewController *wself = self;
     
-    //Return the number of particles for each group.
+    //Returns the number of particles for each group.
     self.densityMapView.particlesCountForStyleGroup = ^uint(GLStyleGroupIndex groupIndex) {
         return (int)wself.locations.count;
     };
     
-    //Retrun the x,y position for each particle
+    //Retruns the x,y position for each particle
     self.densityMapView.positionForParticle = ^CGPoint(GLParticleIndex pointIndex, GLStyleGroupIndex groupIndex) {
         return  [wself.mapView convertCoordinate:wself.locations[pointIndex].coordinate
                                    toPointToView:wself.view];
