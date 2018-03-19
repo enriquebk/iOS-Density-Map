@@ -1,0 +1,6 @@
+framework module GLDensityMap {
+  umbrella header "GLDensityMap.h"
+
+  export *
+  module * { export * }
+}

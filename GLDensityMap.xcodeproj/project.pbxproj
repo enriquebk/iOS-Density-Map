@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDA9B8AA20601D4100E6FAF0 /* GLDensityMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA9B8A020601D4100E6FAF0 /* GLDensityMap.framework */; };
+		CDA9B8AF20601D4100E6FAF0 /* GLDensityMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8AE20601D4100E6FAF0 /* GLDensityMapTests.m */; };
+		CDA9B8B120601D4100E6FAF0 /* GLDensityMap.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA9B8A320601D4100E6FAF0 /* GLDensityMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDA9B8C020601D8500E6FAF0 /* GLDensityMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA9B8BA20601D8400E6FAF0 /* GLDensityMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDA9B8C120601D8500E6FAF0 /* GLDensityMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8BB20601D8400E6FAF0 /* GLDensityMapView.m */; };
+		CDA9B8C220601D8500E6FAF0 /* GLParticlesRender.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA9B8BC20601D8400E6FAF0 /* GLParticlesRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDA9B8C420601D8500E6FAF0 /* GLParticlesRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8BE20601D8500E6FAF0 /* GLParticlesRender.m */; };
+		CDA9B8CA20601DF500E6FAF0 /* GLFrameBufferSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8C720601DF500E6FAF0 /* GLFrameBufferSnapshot.m */; };
+		CDA9B8CB20601DF500E6FAF0 /* GLShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */; };
+		CDA9B8CE20601DFE00E6FAF0 /* point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CDA9B8CC20601DFE00E6FAF0 /* point.vsh */; };
+		CDA9B8CF20601DFE00E6FAF0 /* point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDA9B8CD20601DFE00E6FAF0 /* point.fsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDA9B8AB20601D4100E6FAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDA9B89720601D4100E6FAF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDA9B89F20601D4100E6FAF0;
+			remoteInfo = GLDensityMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDA9B8A020601D4100E6FAF0 /* GLDensityMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLDensityMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA9B8A320601D4100E6FAF0 /* GLDensityMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLDensityMap.h; sourceTree = "<group>"; };
+		CDA9B8A420601D4100E6FAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA9B8A920601D4100E6FAF0 /* GLDensityMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLDensityMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA9B8AE20601D4100E6FAF0 /* GLDensityMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLDensityMapTests.m; sourceTree = "<group>"; };
+		CDA9B8B020601D4100E6FAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA9B8BA20601D8400E6FAF0 /* GLDensityMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDensityMapView.h; sourceTree = "<group>"; };
+		CDA9B8BB20601D8400E6FAF0 /* GLDensityMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDensityMapView.m; sourceTree = "<group>"; };
+		CDA9B8BC20601D8400E6FAF0 /* GLParticlesRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLParticlesRender.h; sourceTree = "<group>"; };
+		CDA9B8BE20601D8500E6FAF0 /* GLParticlesRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLParticlesRender.m; sourceTree = "<group>"; };
+		CDA9B8C620601DF400E6FAF0 /* GLFrameBufferSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFrameBufferSnapshot.h; sourceTree = "<group>"; };
+		CDA9B8C720601DF500E6FAF0 /* GLFrameBufferSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLFrameBufferSnapshot.m; sourceTree = "<group>"; };
+		CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLShaderUtils.m; sourceTree = "<group>"; };
+		CDA9B8C920601DF500E6FAF0 /* GLShaderUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLShaderUtils.h; sourceTree = "<group>"; };
+		CDA9B8CC20601DFE00E6FAF0 /* point.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = point.vsh; sourceTree = "<group>"; };
+		CDA9B8CD20601DFE00E6FAF0 /* point.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = point.fsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDA9B89C20601D4100E6FAF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA9B8A620601D4100E6FAF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA9B8AA20601D4100E6FAF0 /* GLDensityMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDA9B89620601D4100E6FAF0 = {
+			isa = PBXGroup;
+			children = (
+				CDA9B8A220601D4100E6FAF0 /* GLDensityMap */,
+				CDA9B8AD20601D4100E6FAF0 /* GLDensityMapTests */,
+				CDA9B8A120601D4100E6FAF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDA9B8A120601D4100E6FAF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9B8A020601D4100E6FAF0 /* GLDensityMap.framework */,
+				CDA9B8A920601D4100E6FAF0 /* GLDensityMapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDA9B8A220601D4100E6FAF0 /* GLDensityMap */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9B8D020601E0500E6FAF0 /* Utils */,
+				CDA9B8D120601E2E00E6FAF0 /* Shaders */,
+				CDA9B8BA20601D8400E6FAF0 /* GLDensityMapView.h */,
+				CDA9B8BB20601D8400E6FAF0 /* GLDensityMapView.m */,
+				CDA9B8BC20601D8400E6FAF0 /* GLParticlesRender.h */,
+				CDA9B8BE20601D8500E6FAF0 /* GLParticlesRender.m */,
+				CDA9B8A320601D4100E6FAF0 /* GLDensityMap.h */,
+				CDA9B8A420601D4100E6FAF0 /* Info.plist */,
+			);
+			path = GLDensityMap;
+			sourceTree = "<group>";
+		};
+		CDA9B8AD20601D4100E6FAF0 /* GLDensityMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9B8AE20601D4100E6FAF0 /* GLDensityMapTests.m */,
+				CDA9B8B020601D4100E6FAF0 /* Info.plist */,
+			);
+			path = GLDensityMapTests;
+			sourceTree = "<group>";
+		};
+		CDA9B8D020601E0500E6FAF0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9B8C620601DF400E6FAF0 /* GLFrameBufferSnapshot.h */,
+				CDA9B8C720601DF500E6FAF0 /* GLFrameBufferSnapshot.m */,
+				CDA9B8C920601DF500E6FAF0 /* GLShaderUtils.h */,
+				CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CDA9B8D120601E2E00E6FAF0 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9B8CD20601DFE00E6FAF0 /* point.fsh */,
+				CDA9B8CC20601DFE00E6FAF0 /* point.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CDA9B89D20601D4100E6FAF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA9B8B120601D4100E6FAF0 /* GLDensityMap.h in Headers */,
+				CDA9B8C220601D8500E6FAF0 /* GLParticlesRender.h in Headers */,
+				CDA9B8C020601D8500E6FAF0 /* GLDensityMapView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CDA9B89F20601D4100E6FAF0 /* GLDensityMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA9B8B420601D4100E6FAF0 /* Build configuration list for PBXNativeTarget "GLDensityMap" */;
+			buildPhases = (
+				CDA9B89B20601D4100E6FAF0 /* Sources */,
+				CDA9B89C20601D4100E6FAF0 /* Frameworks */,
+				CDA9B89D20601D4100E6FAF0 /* Headers */,
+				CDA9B89E20601D4100E6FAF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLDensityMap;
+			productName = GLDensityMap;
+			productReference = CDA9B8A020601D4100E6FAF0 /* GLDensityMap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDA9B8A820601D4100E6FAF0 /* GLDensityMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA9B8B720601D4100E6FAF0 /* Build configuration list for PBXNativeTarget "GLDensityMapTests" */;
+			buildPhases = (
+				CDA9B8A520601D4100E6FAF0 /* Sources */,
+				CDA9B8A620601D4100E6FAF0 /* Frameworks */,
+				CDA9B8A720601D4100E6FAF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDA9B8AC20601D4100E6FAF0 /* PBXTargetDependency */,
+			);
+			name = GLDensityMapTests;
+			productName = GLDensityMapTests;
+			productReference = CDA9B8A920601D4100E6FAF0 /* GLDensityMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDA9B89720601D4100E6FAF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Enrique Bermúdez";
+				TargetAttributes = {
+					CDA9B89F20601D4100E6FAF0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CDA9B8A820601D4100E6FAF0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CDA9B89A20601D4100E6FAF0 /* Build configuration list for PBXProject "GLDensityMap" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDA9B89620601D4100E6FAF0;
+			productRefGroup = CDA9B8A120601D4100E6FAF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDA9B89F20601D4100E6FAF0 /* GLDensityMap */,
+				CDA9B8A820601D4100E6FAF0 /* GLDensityMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDA9B89E20601D4100E6FAF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA9B8CE20601DFE00E6FAF0 /* point.vsh in Resources */,
+				CDA9B8CF20601DFE00E6FAF0 /* point.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA9B8A720601D4100E6FAF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDA9B89B20601D4100E6FAF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA9B8C420601D8500E6FAF0 /* GLParticlesRender.m in Sources */,
+				CDA9B8CB20601DF500E6FAF0 /* GLShaderUtils.m in Sources */,
+				CDA9B8CA20601DF500E6FAF0 /* GLFrameBufferSnapshot.m in Sources */,
+				CDA9B8C120601D8500E6FAF0 /* GLDensityMapView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA9B8A520601D4100E6FAF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA9B8AF20601D4100E6FAF0 /* GLDensityMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDA9B8AC20601D4100E6FAF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDA9B89F20601D4100E6FAF0 /* GLDensityMap */;
+			targetProxy = CDA9B8AB20601D4100E6FAF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDA9B8B220601D4100E6FAF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDA9B8B320601D4100E6FAF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDA9B8B520601D4100E6FAF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VB2B85C3L8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GLDensityMap/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GLDensityMap;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDA9B8B620601D4100E6FAF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VB2B85C3L8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GLDensityMap/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GLDensityMap;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDA9B8B820601D4100E6FAF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB2B85C3L8;
+				INFOPLIST_FILE = GLDensityMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GLDensityMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDA9B8B920601D4100E6FAF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB2B85C3L8;
+				INFOPLIST_FILE = GLDensityMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GLDensityMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDA9B89A20601D4100E6FAF0 /* Build configuration list for PBXProject "GLDensityMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA9B8B220601D4100E6FAF0 /* Debug */,
+				CDA9B8B320601D4100E6FAF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDA9B8B420601D4100E6FAF0 /* Build configuration list for PBXNativeTarget "GLDensityMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA9B8B520601D4100E6FAF0 /* Debug */,
+				CDA9B8B620601D4100E6FAF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDA9B8B720601D4100E6FAF0 /* Build configuration list for PBXNativeTarget "GLDensityMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA9B8B820601D4100E6FAF0 /* Debug */,
+				CDA9B8B920601D4100E6FAF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDA9B89720601D4100E6FAF0 /* Project object */;
+}
