@@ -10,7 +10,7 @@ iOS Density Map has two main components:
 
 **GLParticlesRender:** Renders all the particles in a `eaglcontext`. Basically it renders groups of particles with a specific style (`GLPariclesStyle`).
 
-**GLDensityMapView:** Provides the eaglcontext and the particles groups info for the `GLParticlesRender`. The `GLDensityMapView` provides  a number of properties and blocks that needs to be overwritten in order to display the particles.
+**GLDensityMapView:** Provides the `eaglcontext` and the particles groups info for the `GLParticlesRender`. The `GLDensityMapView` provides  a number of properties and blocks that needs to be overwritten in order to display the particles.
 
 ## Installation
 
