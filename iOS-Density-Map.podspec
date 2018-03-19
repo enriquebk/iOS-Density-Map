@@ -30,8 +30,9 @@ By using OpenGL ES, iOS Density Map allows you to efficiently render thousands o
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'GLDensityMap/**/*'
-  s.resources = "GLDensityMap/Shaders/**/*"
+  s.requires_arc = true
+  s.source_files = 'GLDensityMap/**/*.{h,m}'
+  s.resource     = 'GLDensityMap/shaders.bundle'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

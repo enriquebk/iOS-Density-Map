@@ -78,12 +78,14 @@
                 vertexShaderPointer:(GLuint *)vertexShader
               fragmentShaderPointer:(GLuint *)fragmentShader;
 {
-    NSString *vsrcPath = [[NSBundle bundleForClass:[self class]] pathForResource:[[vertexShaderfilename lastPathComponent] stringByDeletingPathExtension] ofType:[vertexShaderfilename pathExtension]];
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"shaders" ofType:@"bundle"]];
+    
+    NSString *vsrcPath = [bundle pathForResource:[[vertexShaderfilename lastPathComponent] stringByDeletingPathExtension] ofType:[vertexShaderfilename pathExtension]];
     NSError  *vsrcPathError;
     NSString *vsrcString = [NSString stringWithContentsOfFile:vsrcPath
                                                      encoding:NSUTF8StringEncoding error:&vsrcPathError];
     NSError  *fsrcPathError;
-    NSString *fsrcPath = [[NSBundle bundleForClass:[self class]]  pathForResource:[[fragmentShaderfilename lastPathComponent] stringByDeletingPathExtension] ofType:[fragmentShaderfilename pathExtension]];
+    NSString *fsrcPath = [bundle  pathForResource:[[fragmentShaderfilename lastPathComponent] stringByDeletingPathExtension] ofType:[fragmentShaderfilename pathExtension]];
     
     NSString *fsrcString = [NSString stringWithContentsOfFile:fsrcPath
                                                      encoding:NSUTF8StringEncoding error:&fsrcPathError];

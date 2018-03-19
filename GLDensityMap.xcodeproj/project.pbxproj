@@ -16,8 +16,7 @@
 		CDA9B8C420601D8500E6FAF0 /* GLParticlesRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8BE20601D8500E6FAF0 /* GLParticlesRender.m */; };
 		CDA9B8CA20601DF500E6FAF0 /* GLFrameBufferSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8C720601DF500E6FAF0 /* GLFrameBufferSnapshot.m */; };
 		CDA9B8CB20601DF500E6FAF0 /* GLShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */; };
-		CDA9B8CE20601DFE00E6FAF0 /* point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CDA9B8CC20601DFE00E6FAF0 /* point.vsh */; };
-		CDA9B8CF20601DFE00E6FAF0 /* point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDA9B8CD20601DFE00E6FAF0 /* point.fsh */; };
+		CDA9B9212060451600E6FAF0 /* shaders.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDA9B9202060451600E6FAF0 /* shaders.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +44,7 @@
 		CDA9B8C720601DF500E6FAF0 /* GLFrameBufferSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLFrameBufferSnapshot.m; sourceTree = "<group>"; };
 		CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLShaderUtils.m; sourceTree = "<group>"; };
 		CDA9B8C920601DF500E6FAF0 /* GLShaderUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLShaderUtils.h; sourceTree = "<group>"; };
-		CDA9B8CC20601DFE00E6FAF0 /* point.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = point.vsh; sourceTree = "<group>"; };
-		CDA9B8CD20601DFE00E6FAF0 /* point.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = point.fsh; sourceTree = "<group>"; };
+		CDA9B9202060451600E6FAF0 /* shaders.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = shaders.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +87,8 @@
 		CDA9B8A220601D4100E6FAF0 /* GLDensityMap */ = {
 			isa = PBXGroup;
 			children = (
+				CDA9B9202060451600E6FAF0 /* shaders.bundle */,
 				CDA9B8D020601E0500E6FAF0 /* Utils */,
-				CDA9B8D120601E2E00E6FAF0 /* Shaders */,
 				CDA9B8BA20601D8400E6FAF0 /* GLDensityMapView.h */,
 				CDA9B8BB20601D8400E6FAF0 /* GLDensityMapView.m */,
 				CDA9B8BC20601D8400E6FAF0 /* GLParticlesRender.h */,
@@ -119,15 +117,6 @@
 				CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		CDA9B8D120601E2E00E6FAF0 /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				CDA9B8CD20601DFE00E6FAF0 /* point.fsh */,
-				CDA9B8CC20601DFE00E6FAF0 /* point.vsh */,
-			);
-			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA9B8CE20601DFE00E6FAF0 /* point.vsh in Resources */,
-				CDA9B8CF20601DFE00E6FAF0 /* point.fsh in Resources */,
+				CDA9B9212060451600E6FAF0 /* shaders.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
