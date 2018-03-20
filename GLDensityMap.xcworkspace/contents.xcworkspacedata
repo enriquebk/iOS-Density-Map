@@ -5,6 +5,6 @@
       location = "group:GLDensityMap.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/enrique/Projects/GLDensityMap/Release/GLDensityMap/Example.xcodeproj">
+      location = "group:Example.xcodeproj">
    </FileRef>
 </Workspace>
