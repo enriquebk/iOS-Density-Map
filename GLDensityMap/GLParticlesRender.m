@@ -9,7 +9,7 @@
 #import "GLParticlesRender.h"
 #import "GLShaderUtils.h"
 
-const GLParticlesStyle GLParticlesStyleNone = {
+const GLParticleStyle GLParticleStyleNone = {
     .radius = 5,
     .blurFactor = 0.5,
     .r = 0,
@@ -80,7 +80,7 @@ const GLParticlesStyle GLParticlesStyleNone = {
 
 #pragma mark - Private Methods
 
-- (void)drawParticlesGroup:(GLStyleGroupIndex)groupIndex withStyle:(GLParticlesStyle)style{
+- (void)drawParticlesGroup:(GLStyleGroupIndex)groupIndex withStyle:(GLParticleStyle)style{
     
     //Configure shaders
     

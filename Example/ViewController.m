@@ -41,8 +41,8 @@
     self.densityMapView.styleGroupsCount = 1;
     
     //Retruns the style for each group.
-    self.densityMapView.styleForStyleGroup = ^GLParticlesStyle(GLStyleGroupIndex groupIndex) {
-        GLParticlesStyle style = {
+    self.densityMapView.styleForStyleGroup = ^GLParticleStyle(GLStyleGroupIndex groupIndex) {
+        GLParticleStyle style = {
             .radius = 7,
             .blurFactor = 0.95,
             .r = 255,

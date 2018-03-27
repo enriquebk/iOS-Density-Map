@@ -26,9 +26,9 @@ typedef struct {
     float b;
     float opacity;//(0.0 - 1.0)
     
-} GLParticlesStyle;
+} GLParticleStyle;
 
-extern const GLParticlesStyle GLParticlesStyleNone;
+extern const GLParticleStyle GLParticleStyleNone;
 
 @class GLParticlesRender;
 
@@ -47,7 +47,7 @@ typedef uint GLParticleIndex;
 /**
  * Called when rendering. Returns the style of the group at index `groupIndex`.
  */
-- (GLParticlesStyle)render:(GLParticlesRender *)render styleForStyleGroup:(GLStyleGroupIndex)groupIndex;
+- (GLParticleStyle)render:(GLParticlesRender *)render styleForStyleGroup:(GLStyleGroupIndex)groupIndex;
 
 /**
  * Called when rendering. Returns the numbers of particles for group at index `groupIndex`.

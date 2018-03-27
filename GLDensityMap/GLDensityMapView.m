@@ -74,8 +74,8 @@
         return CGPointZero;
     };
     
-    self.styleForStyleGroup = ^GLParticlesStyle(GLStyleGroupIndex groupIndex) {
-        return GLParticlesStyleNone;
+    self.styleForStyleGroup = ^GLParticleStyle(GLStyleGroupIndex groupIndex) {
+        return GLParticleStyleNone;
     };
     
     self.particlesCountForStyleGroup = ^uint(GLStyleGroupIndex groupIndex) {
@@ -225,7 +225,7 @@ forStyleGroupIndex:(GLStyleGroupIndex)groupIndex{
     return self.positionForParticle(particleIndex,groupIndex);
 }
 
-- (GLParticlesStyle)render:(GLParticlesRender *)render styleForStyleGroup:(GLStyleGroupIndex)groupIndex{
+- (GLParticleStyle)render:(GLParticlesRender *)render styleForStyleGroup:(GLStyleGroupIndex)groupIndex{
     return self.styleForStyleGroup(groupIndex);
 }
 

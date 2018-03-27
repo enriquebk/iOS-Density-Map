@@ -19,7 +19,7 @@
 /**
  * Called when rendering the GLDensityMapView. Retruns actual style of a style group.
  */
-@property (nonnull) GLParticlesStyle (^styleForStyleGroup)(GLStyleGroupIndex);
+@property (nonnull) GLParticleStyle (^styleForStyleGroup)(GLStyleGroupIndex);
 
 /**
  * Called when rendering the GLDensityMapView. Retruns the number of particles that with
