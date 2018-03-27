@@ -35,9 +35,9 @@ Then import the `GLDensityMap.h` header file:
     //Set the number of particles styles (style groups).
     self.densityMapView.styleGroupsCount = 1;
     
-    //Returns the `GLParticlesStyle` for each group.
-    self.densityMapView.styleForStyleGroup = ^GLParticlesStyle(GLStyleGroupIndex groupIndex) {
-        GLParticlesStyle style = {
+    //Returns the `GLParticleStyle` for each group.
+    self.densityMapView.styleForStyleGroup = ^GLParticleStyle(GLStyleGroupIndex groupIndex) {
+        GLParticleStyle style = {
             .radius = 7,
             .blurFactor = 0.95,
             .r = 255,
