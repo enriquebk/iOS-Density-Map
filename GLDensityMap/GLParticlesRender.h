@@ -55,7 +55,7 @@ typedef uint GLParticleIndex;
 - (int)render:(GLParticlesRender *)render particlesCountForGroup:(GLStyleGroupIndex)groupIndex;
 
 /**
- * Called when rendering. The position for particle at index `particlesIndex` for group at index `groupIndex`.
+ * Called when rendering. Returns the position for particle at index `particlesIndex` for group at index `groupIndex`.
  */
 - (CGPoint)render:(GLParticlesRender *)render positionForParticle:(GLParticleIndex)particleIndex
          forStyleGroupIndex:(GLStyleGroupIndex)groupIndex;
