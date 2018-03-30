@@ -3,12 +3,13 @@
 [![Version](https://img.shields.io/cocoapods/v/iOS-Density-Map.svg?style=flat)](http://cocoapods.org/pods/iOS-Density-Map)
 [![License](https://img.shields.io/cocoapods/l/iOS-Density-Map.svg?style=flat)](http://cocoapods.org/pods/iOS-Density-Map)
 [![Platform](https://img.shields.io/cocoapods/p/iOS-Density-Map.svg?style=flat)](http://cocoapods.org/pods/iOS-Density-Map)
+[![Build Status](https://travis-ci.org/ebermudezcds/iOS-Density-Map.svg?branch=master)](https://travis-ci.org/ebermudezcds/iOS-Density-Map)
 
 By using OpenGL ES, iOS Density Map allows you to efficiently render thousands of particles over a map.
 
 iOS Density Map has two main components:
 
-**GLParticlesRender:** Renders all the particles in a `eaglcontext`. Basically it renders groups of particles with a specific style (`GLPariclesStyle`).
+**GLParticlesRender:** Renders all the particles in a `eaglcontext`. Basically it renders groups of particles with a specific style (`GLParticleStyle`).
 
 **GLDensityMapView:** Provides the `eaglcontext` and the particles groups info for the `GLParticlesRender`. The `GLDensityMapView` provides  a number of properties and blocks that needs to be overwritten in order to display the particles.
 
