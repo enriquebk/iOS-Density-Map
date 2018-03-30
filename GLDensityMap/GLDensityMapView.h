@@ -38,9 +38,4 @@
  */
 - (void)render;
 
-/**
- * Takes an snapshot of the view.
- */
-- (UIImage * _Nonnull)snapshot;
-
 @end

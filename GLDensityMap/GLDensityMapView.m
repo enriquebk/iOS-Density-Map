@@ -13,9 +13,9 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 #import "GLDensityMapView.h"
-#import "GLFrameBufferSnapshot.h"
+#import "CAEAGLLayerCustom.h"
 
-@interface GLDensityMapView()
+@interface GLDensityMapView()<CAEAGLLayerCustomDelegate>
 {
     EAGLContext *context;
     
@@ -42,7 +42,7 @@
 // We do this so that our view will be backed by a layer that is capable of OpenGL ES rendering.
 + (Class)layerClass
 {
-    return [CAEAGLLayer class];
+    return [CAEAGLLayerCustom class];
 }
 
 - (id)init{
@@ -135,6 +135,8 @@
     eaglLayer.backgroundColor = backgroundColor;
     CFRelease(backgroundColor);
     CGColorSpaceRelease(rgb);
+    
+    ((CAEAGLLayerCustom *)self.layer).layerDelegate = self;
 }
 
 - (void)destroyBuffers{
@@ -203,14 +205,7 @@
     }
 }
 
-- (UIImage*)snapshot
-{
-    return [GLFrameBufferSnapshot snapshotFromFramebuffer:viewFramebuffer
-                                             eagleContext:context
-                                       contentScaleFactor:self.contentScaleFactor];
-}
-
-#pragma Mark - GLDensityMapRenderDelegate
+#pragma mark - GLDensityMapRenderDelegate
 
 - (int)styleGroupsCountForRender:(GLParticlesRender *)render{
     return self.styleGroupsCount;
@@ -227,6 +222,20 @@ forStyleGroupIndex:(GLStyleGroupIndex)groupIndex{
 
 - (GLParticleStyle)render:(GLParticlesRender *)render styleForStyleGroup:(GLStyleGroupIndex)groupIndex{
     return self.styleForStyleGroup(groupIndex);
+}
+
+#pragma mark - CAEAGLLayerCustomDelegate methods
+
+- (GLint)framebufferForLayer:(CAEAGLLayerCustom *)layer{
+    return viewFramebuffer;
+}
+
+- (EAGLContext *)eagleContextForLayer:(CAEAGLLayerCustom *)layer{
+    return context;
+}
+
+- (float)contentScaleFactorForLayer:(CAEAGLLayerCustom *)layer{
+    return self.contentScaleFactor;
 }
 
 #pragma mark -

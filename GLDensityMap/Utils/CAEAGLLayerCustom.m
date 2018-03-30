@@ -1,19 +1,31 @@
 //
-//  GLFrameBufferSnapShot.m
+//  CAEAGLLayerCustom.m
 //  GLDensityMap
 //
-//  Created by Enrique on 3/18/18.
-//  Copyright © 2018 Enrique. All rights reserved.
+//  Created by Enrique on 3/29/18.
+//  Copyright © 2018 Enrique Bermúdez. All rights reserved.
 //
 
-#import "GLFrameBufferSnapshot.h"
+#import "CAEAGLLayerCustom.h"
 #import <OpenGLES/ES3/gl.h>
 
-@implementation GLFrameBufferSnapshot
 
-+ (UIImage *)snapshotFromFramebuffer:(GLint)framebuffer
-                        eagleContext:(EAGLContext*)contex
-                  contentScaleFactor:(float)contentScaleFactor{
+@implementation CAEAGLLayerCustom
+
+-(void)renderInContext:(CGContextRef)ctx{
+
+    [super renderInContext:ctx];
+    
+    if(self.layerDelegate){
+        [self renderInCurentContextWithFramebuffer:[self.layerDelegate framebufferForLayer:self]
+                 eagleContext:[self.layerDelegate eagleContextForLayer:self]
+           contentScaleFactor:[self.layerDelegate contentScaleFactorForLayer:self]];
+    }
+}
+
+- (void)renderInCurentContextWithFramebuffer:(GLint)framebuffer
+                                eagleContext:(EAGLContext*)contex
+                          contentScaleFactor:(float)contentScaleFactor{
     
     [EAGLContext setCurrentContext:contex];
     
@@ -76,18 +88,11 @@
     CGContextSetBlendMode(cgcontext, kCGBlendModeCopy);
     CGContextDrawImage(cgcontext, CGRectMake(0.0, 0.0, widthInPoints, heightInPoints), iref);
     
-    // Retrieve the UIImage from the current context
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
     // Clean up
     free(data);
     CFRelease(ref);
     CFRelease(colorspace);
     CGImageRelease(iref);
-    
-    return image;
 }
 
 @end

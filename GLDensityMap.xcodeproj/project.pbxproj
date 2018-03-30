@@ -14,9 +14,19 @@
 		CDA9B8C120601D8500E6FAF0 /* GLDensityMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8BB20601D8400E6FAF0 /* GLDensityMapView.m */; };
 		CDA9B8C220601D8500E6FAF0 /* GLParticlesRender.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA9B8BC20601D8400E6FAF0 /* GLParticlesRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDA9B8C420601D8500E6FAF0 /* GLParticlesRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8BE20601D8500E6FAF0 /* GLParticlesRender.m */; };
-		CDA9B8CA20601DF500E6FAF0 /* GLFrameBufferSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8C720601DF500E6FAF0 /* GLFrameBufferSnapshot.m */; };
 		CDA9B8CB20601DF500E6FAF0 /* GLShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */; };
 		CDA9B9212060451600E6FAF0 /* shaders.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDA9B9202060451600E6FAF0 /* shaders.bundle */; };
+		CDE42FA0206D415700F330A7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CDE42F8E206D415700F330A7 /* LICENSE */; };
+		CDE42FA1206D415700F330A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CDE42F8F206D415700F330A7 /* README.md */; };
+		CDE42FA2206D415700F330A7 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE42F91206D415700F330A7 /* FBSnapshotTestCasePlatform.m */; };
+		CDE42FA3206D415700F330A7 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE42F93206D415700F330A7 /* FBSnapshotTestController.m */; };
+		CDE42FA4206D415700F330A7 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE42F94206D415700F330A7 /* FBSnapshotTestCase.m */; };
+		CDE42FA5206D415700F330A7 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE42F98206D415700F330A7 /* UIImage+Snapshot.m */; };
+		CDE42FA6206D415700F330A7 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE42F99206D415700F330A7 /* UIApplication+StrictKeyWindow.m */; };
+		CDE42FA7206D415700F330A7 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE42F9A206D415700F330A7 /* UIImage+Compare.m */; };
+		CDE42FA8206D415700F330A7 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE42F9B206D415700F330A7 /* UIImage+Diff.m */; };
+		CDE42FAB206DC0D400F330A7 /* CAEAGLLayerCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE42FA9206DC0D400F330A7 /* CAEAGLLayerCustom.h */; };
+		CDE42FAC206DC0D400F330A7 /* CAEAGLLayerCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE42FAA206DC0D400F330A7 /* CAEAGLLayerCustom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +50,27 @@
 		CDA9B8BB20601D8400E6FAF0 /* GLDensityMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDensityMapView.m; sourceTree = "<group>"; };
 		CDA9B8BC20601D8400E6FAF0 /* GLParticlesRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLParticlesRender.h; sourceTree = "<group>"; };
 		CDA9B8BE20601D8500E6FAF0 /* GLParticlesRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLParticlesRender.m; sourceTree = "<group>"; };
-		CDA9B8C620601DF400E6FAF0 /* GLFrameBufferSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFrameBufferSnapshot.h; sourceTree = "<group>"; };
-		CDA9B8C720601DF500E6FAF0 /* GLFrameBufferSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLFrameBufferSnapshot.m; sourceTree = "<group>"; };
 		CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLShaderUtils.m; sourceTree = "<group>"; };
 		CDA9B8C920601DF500E6FAF0 /* GLShaderUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLShaderUtils.h; sourceTree = "<group>"; };
 		CDA9B9202060451600E6FAF0 /* shaders.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = shaders.bundle; sourceTree = "<group>"; };
+		CDE42F8E206D415700F330A7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CDE42F8F206D415700F330A7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CDE42F91206D415700F330A7 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		CDE42F92206D415700F330A7 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		CDE42F93206D415700F330A7 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTestController.m; sourceTree = "<group>"; };
+		CDE42F94206D415700F330A7 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		CDE42F95206D415700F330A7 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		CDE42F97206D415700F330A7 /* UIImage+Diff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Diff.h"; sourceTree = "<group>"; };
+		CDE42F98206D415700F330A7 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		CDE42F99206D415700F330A7 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		CDE42F9A206D415700F330A7 /* UIImage+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compare.m"; sourceTree = "<group>"; };
+		CDE42F9B206D415700F330A7 /* UIImage+Diff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Diff.m"; sourceTree = "<group>"; };
+		CDE42F9C206D415700F330A7 /* UIImage+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compare.h"; sourceTree = "<group>"; };
+		CDE42F9D206D415700F330A7 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		CDE42F9E206D415700F330A7 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		CDE42F9F206D415700F330A7 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSnapshotTestController.h; sourceTree = "<group>"; };
+		CDE42FA9206DC0D400F330A7 /* CAEAGLLayerCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEAGLLayerCustom.h; sourceTree = "<group>"; };
+		CDE42FAA206DC0D400F330A7 /* CAEAGLLayerCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEAGLLayerCustom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +128,7 @@
 		CDA9B8AD20601D4100E6FAF0 /* GLDensityMapTests */ = {
 			isa = PBXGroup;
 			children = (
+				CDE42F8D206D415700F330A7 /* iOSSnapshotTestCase */,
 				CDA9B8AE20601D4100E6FAF0 /* GLDensityMapTests.m */,
 				CDA9B8B020601D4100E6FAF0 /* Info.plist */,
 			);
@@ -111,12 +138,51 @@
 		CDA9B8D020601E0500E6FAF0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				CDA9B8C620601DF400E6FAF0 /* GLFrameBufferSnapshot.h */,
-				CDA9B8C720601DF500E6FAF0 /* GLFrameBufferSnapshot.m */,
+				CDE42FA9206DC0D400F330A7 /* CAEAGLLayerCustom.h */,
+				CDE42FAA206DC0D400F330A7 /* CAEAGLLayerCustom.m */,
 				CDA9B8C920601DF500E6FAF0 /* GLShaderUtils.h */,
 				CDA9B8C820601DF500E6FAF0 /* GLShaderUtils.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CDE42F8D206D415700F330A7 /* iOSSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				CDE42F8E206D415700F330A7 /* LICENSE */,
+				CDE42F8F206D415700F330A7 /* README.md */,
+				CDE42F90206D415700F330A7 /* FBSnapshotTestCase */,
+			);
+			path = iOSSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		CDE42F90206D415700F330A7 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				CDE42F91206D415700F330A7 /* FBSnapshotTestCasePlatform.m */,
+				CDE42F92206D415700F330A7 /* FBSnapshotTestCase.h */,
+				CDE42F93206D415700F330A7 /* FBSnapshotTestController.m */,
+				CDE42F94206D415700F330A7 /* FBSnapshotTestCase.m */,
+				CDE42F95206D415700F330A7 /* FBSnapshotTestCasePlatform.h */,
+				CDE42F96206D415700F330A7 /* Categories */,
+				CDE42F9F206D415700F330A7 /* FBSnapshotTestController.h */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		CDE42F96206D415700F330A7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CDE42F97206D415700F330A7 /* UIImage+Diff.h */,
+				CDE42F98206D415700F330A7 /* UIImage+Snapshot.m */,
+				CDE42F99206D415700F330A7 /* UIApplication+StrictKeyWindow.m */,
+				CDE42F9A206D415700F330A7 /* UIImage+Compare.m */,
+				CDE42F9B206D415700F330A7 /* UIImage+Diff.m */,
+				CDE42F9C206D415700F330A7 /* UIImage+Compare.h */,
+				CDE42F9D206D415700F330A7 /* UIApplication+StrictKeyWindow.h */,
+				CDE42F9E206D415700F330A7 /* UIImage+Snapshot.h */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +194,7 @@
 			files = (
 				CDA9B8B120601D4100E6FAF0 /* GLDensityMap.h in Headers */,
 				CDA9B8C220601D8500E6FAF0 /* GLParticlesRender.h in Headers */,
+				CDE42FAB206DC0D400F330A7 /* CAEAGLLayerCustom.h in Headers */,
 				CDA9B8C020601D8500E6FAF0 /* GLDensityMapView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE42FA1206D415700F330A7 /* README.md in Resources */,
+				CDE42FA0206D415700F330A7 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +302,7 @@
 			files = (
 				CDA9B8C420601D8500E6FAF0 /* GLParticlesRender.m in Sources */,
 				CDA9B8CB20601DF500E6FAF0 /* GLShaderUtils.m in Sources */,
-				CDA9B8CA20601DF500E6FAF0 /* GLFrameBufferSnapshot.m in Sources */,
+				CDE42FAC206DC0D400F330A7 /* CAEAGLLayerCustom.m in Sources */,
 				CDA9B8C120601D8500E6FAF0 /* GLDensityMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,7 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE42FA2206D415700F330A7 /* FBSnapshotTestCasePlatform.m in Sources */,
+				CDE42FA6206D415700F330A7 /* UIApplication+StrictKeyWindow.m in Sources */,
 				CDA9B8AF20601D4100E6FAF0 /* GLDensityMapTests.m in Sources */,
+				CDE42FA3206D415700F330A7 /* FBSnapshotTestController.m in Sources */,
+				CDE42FA5206D415700F330A7 /* UIImage+Snapshot.m in Sources */,
+				CDE42FA7206D415700F330A7 /* UIImage+Compare.m in Sources */,
+				CDE42FA8206D415700F330A7 /* UIImage+Diff.m in Sources */,
+				CDE42FA4206D415700F330A7 /* FBSnapshotTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
