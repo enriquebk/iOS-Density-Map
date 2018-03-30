@@ -1,3 +1,2 @@
 language: objective-c
-xcode_workspace: GLDensityMap.xcworkspace 
-xcode_scheme: GLDensityMap
+script: xcodebuild -workspace GLDensityMap.xcworkspace -scheme GLDensityMap -destination 'platform=iOS Simulator,name=iPhone 8' clean analyze test
