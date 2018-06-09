@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/iOS-Density-Map.svg?style=flat)](http://cocoapods.org/pods/iOS-Density-Map)
 [![License](https://img.shields.io/cocoapods/l/iOS-Density-Map.svg?style=flat)](http://cocoapods.org/pods/iOS-Density-Map)
 [![Platform](https://img.shields.io/cocoapods/p/iOS-Density-Map.svg?style=flat)](http://cocoapods.org/pods/iOS-Density-Map)
-[![Build Status](https://travis-ci.org/ebermudezcds/iOS-Density-Map.svg?branch=master)](https://travis-ci.org/ebermudezcds/iOS-Density-Map)
+[![Build Status](https://travis-ci.org/enriquebk/iOS-Density-Map.svg?branch=master)](https://travis-ci.org/enriquebk/iOS-Density-Map)
 
 By using OpenGL ES, iOS Density Map allows you to efficiently render thousands of particles over a map.
 
