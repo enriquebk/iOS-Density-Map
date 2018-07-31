@@ -66,7 +66,7 @@ Then import the `GLDensityMap.h` header file:
 
 ## Example
 
-![](Screenshot.png)
+![](https://raw.githubusercontent.com/enriquebk/iOS-Density-Map/master/Screenshot.png)
 
 ## Author
 
