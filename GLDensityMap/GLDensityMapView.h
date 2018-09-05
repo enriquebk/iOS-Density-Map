@@ -2,8 +2,8 @@
 //  GLDensityMapView.h
 //  GLDensityMap
 //
-//  Created by Enrique on 3/15/18.
-//  Copyright © 2018 Enrique. All rights reserved.
+//  Created by Enrique Bermúdez on 3/15/18.
+//  Copyright © 2018 Enrique Bermúdez. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

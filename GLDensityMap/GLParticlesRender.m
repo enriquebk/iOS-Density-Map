@@ -2,7 +2,7 @@
 //  ParticlesDensityMap.m
 //  HMHeatmap
 //
-//  Created by Enrique on 1/22/18.
+//  Created by Enrique Bermúdez on 1/22/18.
 //  Copyright © 2018 Enrique Bermúdez. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Example
 //
-//  Created by Enrique on 3/19/18.
+//  Created by Enrique Bermúdez on 3/19/18.
 //  Copyright © 2018 Enrique Bermúdez. All rights reserved.
 //
 

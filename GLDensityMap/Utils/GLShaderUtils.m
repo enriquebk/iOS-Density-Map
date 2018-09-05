@@ -2,8 +2,8 @@
 //  GLShaderUtils.m
 //  Veyron
 //
-//  Created by Enrique on 6/1/16.
-//  Copyright © 2016 CodigoDelSur. All rights reserved.
+//  Created by Enrique Bermúdez on 6/1/16.
+//  Copyright © 2016 Enrique Bermúdez. All rights reserved.
 //
 
 #import "GLShaderUtils.h"
