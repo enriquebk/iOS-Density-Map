@@ -17,19 +17,19 @@
 @property int styleGroupsCount;
 
 /**
- * Called when rendering the GLDensityMapView. Retruns actual style of a style group.
+ * Called when rendering the GLDensityMapView. Retruns the `GLParticleStyle` of a style group.
  */
 @property (nonnull) GLParticleStyle (^styleForStyleGroup)(GLStyleGroupIndex);
 
 /**
- * Called when rendering the GLDensityMapView. Retruns the number of particles that with
- * be rendered witha given style group.
+ * Called when rendering the GLDensityMapView. Retruns the number of particles that will
+ * be rendered for a given style group.
  */
 @property (nonnull) uint (^particlesCountForStyleGroup)(GLStyleGroupIndex);
 
 /**
- * Called when rendering the GLDensityMapView. Retruns the particle position(inside the view) of a
- * given particle inside a certain style group.
+ * Called when rendering the GLDensityMapView. Retruns the particle position(GL coords) of a
+ * given particle for a certain style group.
  */
 @property (nonnull) CGPoint (^positionForParticle)(GLParticleIndex,GLStyleGroupIndex);
 
